@@ -13,14 +13,12 @@ int print_R(va_list R)
 	char *str;
 	unsigned int i, j;
 
-	int count 0;
+	int count = 0;
 
 	char in[] =
-	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdef
-	ghijklmnopqrstuvwxyz";
+	"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char out[] =
-	"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrst
-	uvwxyzabcdefghijklm";
+	"NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	str = va_arg(R, char *);
 	if (str == NULL)
